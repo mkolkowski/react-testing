@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test 1`] = `
+<div>
+  <input
+    type="hidden"
+    value={undefined}
+  />
+  <button
+    onClick={[Function]}
+  >
+    Stan przycisku: 
+    NON
+  </button>
+</div>
+`;
