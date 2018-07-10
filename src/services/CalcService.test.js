@@ -13,17 +13,19 @@ afterAll(() => {
 });
 
 //Matchers
-test('adds 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(3);
-});
+describe('Sum tests', () => {
+    test('adds 1 + 2 to equal 3', () => {
+        expect(sum(1, 2)).toBe(3);
+    });
 
-test('adds a + b greater or equal a and b', () => {
-    expect(sum(1, 2)).toBeGreaterThanOrEqual(1);
-    expect(sum(1, 2)).toBeGreaterThanOrEqual(2);
-});
+    test('adds a + b greater or equal a and b', () => {
+        expect(sum(1, 2)).toBeGreaterThanOrEqual(1);
+        expect(sum(1, 2)).toBeGreaterThanOrEqual(2);
+    });
 
-test('adds 1 + 2 not equal 4', () => {
-    expect(sum(1, 2)).not.toBe(4);
+    test('adds 1 + 2 not equal 4', () => {
+        expect(sum(1, 2)).not.toBe(4);
+    });
 });
 
 test('should find end in weekend', () => {
