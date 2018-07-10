@@ -6,3 +6,4 @@ Links:
 * https://jestjs.io/docs/en/tutorial-react
 * https://reactjs.org/docs/test-utils.html
 * https://www.robinwieruch.de/react-testing-tutorial/
+* https://reactjs.org/docs/shallow-renderer.html

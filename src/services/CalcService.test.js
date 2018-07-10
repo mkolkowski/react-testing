@@ -66,5 +66,19 @@ test('alphabet contain c', () => {
 
     var result = sumFunctionResults(fun1Mock, fun2Mock);
     expect(result).toBe(3);
+
+});
+
+test('functions called once', () => {
+    const fun1Mock = jest.fn();
+    fun1Mock.mockReturnValueOnce(1);
+
+    const fun2Mock = jest.fn();
+    fun2Mock.mockReturnValueOnce(2);
+
+    sumFunctionResults(fun1Mock, fun2Mock);
+
+    expect(fun1Mock.mock.calls.length).toBe(1);
+    expect(fun2Mock.mock.calls.length).toBe(1);
 });
 
